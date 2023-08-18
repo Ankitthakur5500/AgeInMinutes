@@ -9,6 +9,9 @@ import android.widget.Toast
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
+
+    //var date :TextView ?= null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -17,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         var date:TextView = findViewById(R.id.date)
 
         button.setOnClickListener{
+        //onClick()
             val c = Calendar.getInstance()
             val year = c.get(Calendar.YEAR)
             val month = c.get(Calendar.MONTH)
@@ -35,5 +39,8 @@ class MainActivity : AppCompatActivity() {
             datePickerDialog.show()
         }
     }
+//    fun onClick(){
+//
+//    }
 
 }
