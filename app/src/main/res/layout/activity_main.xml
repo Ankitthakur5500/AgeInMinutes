@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/body">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="CALCULATE YOUR"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_green"
+        android:layout_margin="40dp"
+        />
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt"
+        android:layout_margin="30dp"
+        android:text="AGE"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:background="@color/dark_green"
+        android:padding="10dp"
+        />
+    <TextView
+        android:id="@+id/minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IN MINUTES"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt2"
+        android:textSize="35sp"
+        android:layout_margin="30dp"
+        android:textColor="@color/dark_green"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/minutes"
+        android:text="SELECT DATE"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/light_green"
+        />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn"
+        android:text="31.05.1988"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_margin="30dp"
+        android:textColor="@color/dark_green"/>
+
+    <TextView
+        android:id="@+id/selectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        android:textSize="25sp"
+        android:layout_margin="30dp"
+        android:text="Selected Date"/>
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedDate"
+        android:textSize="25sp"
+        android:layout_margin="30sp"
+        android:text="140000000"
+        android:textStyle="bold"
+        android:textColor="@color/dark_green"
+        />
+    <TextView
+        android:id="@+id/selectedDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/min"
+        android:textSize="25sp"
+        android:layout_margin="30dp"
+        android:text="Selected Date"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
